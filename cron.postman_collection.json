@@ -1,0 +1,216 @@
+{
+	"id": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+	"name": "cron",
+	"description": "",
+	"order": [
+		"48fdfe27-5cf5-3840-7f42-aecad3ef625a",
+		"bfe29e76-c92b-5c81-1d37-d8fef86ad0a1",
+		"c2dba4f8-459c-7220-9e89-977245936bcd",
+		"c035330d-34b2-28cb-1ea9-bb62a3880aaf",
+		"f41ee441-f941-a2e2-a418-681eb5ddb5bc",
+		"351c5125-7622-d3f2-a25e-33ec3994bd60",
+		"35a58342-299e-3fd4-8142-b76e0b0b4318"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1673716707808,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "351c5125-7622-d3f2-a25e-33ec3994bd60",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/pausejob",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673803456629,
+			"name": "pause job",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": [],
+			"rawModeData": "{\n\t\"jobID\":\"63c4301533c80981519aa1aa\"\n}"
+		},
+		{
+			"id": "35a58342-299e-3fd4-8142-b76e0b0b4318",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/resumejob",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673803459064,
+			"name": "resumejob",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": [],
+			"rawModeData": "{\n\t\"jobID\":\"63c4301533c80981519aa1aa\"\n}"
+		},
+		{
+			"id": "48fdfe27-5cf5-3840-7f42-aecad3ef625a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/addjob",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673866859200,
+			"name": "addjob",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": [],
+			"rawModeData": "{\n\t\"pattern\": \"*/5 * * * * *\",\n\t\"timeZone\":\"Africa/Cairo\",\n\t\"DeviceID\": \"dxesdfiobvxdhfrdfgv\",\n\t\"DeviceToken\": \"dxesdfiobvxdhfrdfgv\",\n\t\"userID\": \"aliatwa\",\n\t\"JobName\": \"Floor 1 Lighting\",\n\t\"DeviceName\": \"lighting\",\n\t\"metadata\":{\n\t\t\"tempreture\": \"value1\", \"lighting\":true, \"pressure\": 43.0\n\t\t\n\t}\n}"
+		},
+		{
+			"id": "bfe29e76-c92b-5c81-1d37-d8fef86ad0a1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/updatejob",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673857364615,
+			"name": "updatejob",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": [],
+			"rawModeData": "{\n\t\"jobID\":\"63c4301533c80981519aa1aa\",\n\t\"pattern\": \"*/7 * * * * *\",\n\t\"timeZone\":\"Africa/Cairo\",\n\t\"deviceID\": \"hvac robot\",\n\t\"userID\": \"aliatwa\",\n\t\"DeviceName\": \"lighting\"\n}"
+		},
+		{
+			"id": "c035330d-34b2-28cb-1ea9-bb62a3880aaf",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/removealljobs",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673795183540,
+			"name": "removealljobs",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": []
+		},
+		{
+			"id": "c2dba4f8-459c-7220-9e89-977245936bcd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/getuserjobs",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673795792072,
+			"name": "getuserjobs",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": [],
+			"rawModeData": "{\n\t\"userID\": \"aliatwa\"\n}"
+		},
+		{
+			"id": "f41ee441-f941-a2e2-a418-681eb5ddb5bc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/removejob",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1673805545113,
+			"name": "removejob",
+			"description": "",
+			"collectionId": "5a5c8491-dbf2-92c3-5154-fb1531f570b5",
+			"responses": [],
+			"rawModeData": "{\n\t\"jobID\":\"63c42ff633c80981519aa1a9\"\n}"
+		}
+	]
+}
